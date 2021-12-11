@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="seriale2.xslt"?>
+<strona>
+	<tytul>
+		<firsthalf>
+			świat
+		</firsthalf>
+		<secondhalf>
+			seriali
+		</secondhalf>
+	</tytul>
+	<autor wiek="19" plec="male" narodowosc="pl">
+		<imie>Marek</imie>
+		<nazwisko>Brandt</nazwisko>
+	</autor>
+	<data>
+		2020-11-19
+	</data>
+	<seriale>
+		<serial produkcja="USA" sezonow="5" mojaOcena="10" gatunek="Kryminał">
+			<daneSerialu>
+				<kluczowe>
+					<tytul>Breaking Bad</tytul>
+					<krotkiOpis>Gdy nauczyciel chemii dowiaduje się, że ma raka, postanawia rozpocząć produkcję metamfetaminy, by finansowo zabezpieczyć swoją rodzinę.</krotkiOpis>
+				</kluczowe>
+				<poboczne>
+					<tworca>Vince Gilligan</tworca>
+					<opis>
+						<pierwszeZdanie>Jeden z najbardziej znanych i cenionych seriali na świecie.</pierwszeZdanie>
+						Opowiada historię Waltera White'a, który zmienia się nie do poznania gdy otrzymuję diagnozę od lekarza.
+						Serial może być materiałem do rozmowy na wiele ciekawych tematów. Jeśli jesteś fanem seriali, koniecznie musisz znać ten.
+						Warto zaznaczyć, że powstał prequel o tytule "Better call Saul", który również wnosi bardzo wiele do świata z "Breaking Bad".
+					</opis>
+					<zdjecie source="img/bb.jpg">
+						Breaking Bad
+					</zdjecie>
+					<linki>
+						<link source="https://www.filmweb.pl/serial/Breaking+Bad-2008-430668">Filmweb</link>
+						<link source="https://www.imdb.com/title/tt0903747/?ref_=nv_sr_srsg_1">IMBd</link>
+					</linki>
+				</poboczne>
+			</daneSerialu>
+		</serial>
+		<serial produkcja="USA" sezonow="5" mojaOcena="9" gatunek="Komedia">
+			<daneSerialu>
+				<kluczowe>
+					<tytul>Better call Saul</tytul>
+					<krotkiOpis>Pechowy prawnik robi wszystko, by zaistnieć na sądowej scenie w Albuquerque.</krotkiOpis>
+				</kluczowe>
+				<poboczne>
+					<tworca>Vince Gilligan, Peter Gould</tworca>
+					<opis>
+						<pierwszeZdanie>Serial "Better call Saul" jest prequelem serialu "Breaking Bad".</pierwszeZdanie> Jeśli jesteś fanem tego drugiego, to z czystym sercem mogę polecić ci ten serial. Mimo tego, jeżeli serialu "Breaking Bad" nie znasz, nic nie stoi na przeszkodzie, by swoją przygodę rozpocząć właśnie od Saula. Serial rozgrywa się w okolicach Albuquerque. Niesamowite kadry przykuwają oko i pozostają w pamięci na długo. Opowiada o ciężkiej drodze, którą Saul Goodman musi przejść, by zostać prawnikiem. Połączenie komedii i dramatu, znakomicie się w tym przypadku udało.
+					</opis>
+					<zdjecie source="img/bcs.jpg">
+						Better call Saul
+					</zdjecie>
+					<linki>
+						<link source="https://www.filmweb.pl/serial/Zadzwo%C5%84+do+Saula-2015-697645">Filmweb</link>
+						<link source="https://www.imdb.com/title/tt3032476/?ref_=nv_sr_srsg_0">IMBd</link>
+					</linki>
+				</poboczne>
+			</daneSerialu>
+		</serial>
+		<serial produkcja="USA" sezonow="5" mojaOcena="10" gatunek="Fantasy">
+			<daneSerialu>
+				<kluczowe>
+					<tytul>Lucyfer</tytul>
+					<krotkiOpis>Nieszczęśliwy i znudzony swoim bytem Lucyfer Morningstar porzuca funkcję Władcy Piekieł, po czym udaje się do Los Angeles, gdzie zostaje właścicielem luksusowego klubu nocnego.</krotkiOpis>
+				</kluczowe>
+				<poboczne>
+					<tworca>Tom Kapinos</tworca>
+					<opis>
+						<pierwszeZdanie>UWAGA! Serial niezwykle wciąga.</pierwszeZdanie> Oglądanie serialu "Lucyfer", daje niesamowicie dużo frajdy.
+						Może rzecz w tym, że głównym bohaterem jest charyzmatyczny, satyryczny i prawdomówny diabeł.
+						Nawet jeśli jesteś wierzący, to będziesz się dobrze bawił, bo serial nie próbuje wyśmiewać chrześcijaństa.
+						Zdecydowanie polecam. Chodź radzę zastanowić się, czy masz w danym momecie sporo czasu, bo prawdopodobnie na 1 odcinku się nie skończy.
+					</opis>
+					<zdjecie source="img/lucyfer.jpg">
+						Lucyfer
+					</zdjecie>
+					<linki>
+						<link source="https://www.filmweb.pl/serial/Lucyfer-2016-742520">Filmweb</link>
+						<link source="https://www.imdb.com/title/tt4052886/?ref_=nv_sr_srsg_0">IMBd</link>
+					</linki>
+				</poboczne>
+			</daneSerialu>
+		</serial>
+		<serial produkcja="Wielka Brytania" sezonow="4" mojaOcena="8" gatunek="Dramat">
+			<daneSerialu>
+				<kluczowe>
+					<tytul>Sherlock</tytul>
+					<krotkiOpis>John Watson jest lekarzem wojskowym, który niedawno wrócił z wojny. Gdy poznaje genialnego detektywa Sherlocka Holmesa, zaczyna pomagać mu w rozwiązywaniu zagadek kryminalnych.</krotkiOpis>
+				</kluczowe>
+				<poboczne>
+					<tworca>Steven Moffat, Mark Gatiss</tworca>
+					<opis>
+						<pierwszeZdanie>Serial który muszą obejrzeć fani powieści detektywistycznych.</pierwszeZdanie> Do ekranu przykuwa zawiłość zagadek, jak i sposób prezentacji
+						rozwiązań. Nie do opisania jest radość z samodzielnego wpadnięcia na trop, szybciej niż główny bohater.
+						Mroczny Londyn tylko dodaje kolorytu.
+					</opis>
+					<zdjecie source="img/sherlock.jpg">
+						Sherlock
+					</zdjecie>
+					<linki>
+						<link source="https://www.filmweb.pl/serial/Sherlock-2010-528992">Filmweb</link>
+						<link source="https://www.imdb.com/title/tt1475582/?ref_=nv_sr_srsg_0">IMBd</link>
+					</linki>
+				</poboczne>
+			</daneSerialu>
+		</serial>
+		<serial produkcja="USA" sezonow="3" mojaOcena="10" gatunek="Sci-Fi">
+			<daneSerialu>
+				<kluczowe>
+					<tytul>Stranger Things</tytul>
+					<krotkiOpis>
+						Podczas powrotu do domu znika dwunastoletni Will Byers. Zaginięcie chłopca jest początkiem dziwnych i niebezpiecznych wydarzeń trapiących prowincjonalne miasteczko.
+					</krotkiOpis>
+				</kluczowe>
+				<poboczne>
+					<tworca>Matt Duffer, Ross Duffer</tworca>
+					<opis>
+						<pierwszeZdanie>Serial "Stranger Things" pomaga odnaleźć w sobie dziecko na nowo.</pierwszeZdanie> Obserwowanie perypetii grupy nastolatków sprawia czystą przyjemność.
+						Ale uważajcie, pewne momenty w tym serialu są w stanie zmrozić krew w żyłach, nawet u najbardziej zagorzałych fanów horrorów.
+					</opis>
+					<zdjecie source="img/st.jpg">
+						Stranger Things
+					</zdjecie>
+					<linki>
+						<link source="https://www.filmweb.pl/serial/Stranger+Things-2016-750359">Filmweb</link>
+						<link source="https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0">IMBd</link>
+					</linki>
+				</poboczne>
+			</daneSerialu>
+		</serial>
+		<serial produkcja="Irlandia/Kanada" sezonow="6" mojaOcena="9" gatunek="Dramat historyczny">
+			<daneSerialu>
+				<kluczowe>
+					<tytul>Wikingowie</tytul>
+					<krotkiOpis>Młody wiking, Ragnar Lothbrok, pragnie, by wyprawy łupieżcze odbywały się nie tylko na wschód, ale także w kierunku przeciwnym.</krotkiOpis>
+				</kluczowe>
+				<poboczne>
+					<tworca>Michael Hirst</tworca>
+					<opis>
+						<pierwszeZdanie>Pomimo tego, że serial jest przedstawicielem gatunku dramatów historycznych, to nie obawiajcie się że będzie to nudna lekcja historii.</pierwszeZdanie>
+						Historia Ragnara jest pasjonująca. Twórca zadbał o to, by widz zagłębił się w fabułe i razem z bohaterami przeżywał radości, smutki,
+						podboje i zdrady. Zdecydowanie warte obejrzenie.
+					</opis>
+					<zdjecie source="img/wiking.jpg">
+						Wikingowie
+					</zdjecie>
+					<linki>
+						<link source="https://www.filmweb.pl/serial/Wikingowie-2013-659055">Filmweb</link>
+						<link source="https://www.imdb.com/title/tt2306299/?ref_=nv_sr_srsg_0">IMBd</link>
+					</linki>
+				</poboczne>
+			</daneSerialu>
+		</serial>
+	</seriale>
+	<linkiOgolne>
+		<link source="https://www.filmweb.pl">Filmweb</link>
+		<link source="https://www.imdb.com">IMDb</link>
+	</linkiOgolne>
+</strona>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Świat seriali</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="seriale, filmy, netflix, recenzja">
+    <meta name="description" content="Blog w tematyce seriali wartych obejrzenia.">
+    <meta name="author" content="Marek Brandt">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <div class="logosvg"><svg width="50" height="50">
+                    <circle cx="25" cy="25" r="23" stroke="black" stroke-width="4" fill="#ce2503" />
+                    <circle cx="25" cy="25" r="22" stroke="#7e1702" stroke-width="5" fill="#ce2503" />
+                  </svg></div>
+                <span class="logoswiat">świat</span>seriali
+                <div style="clear:both;"></div>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="seriale.html">Seriale</a></li>
+                <li><a href="kategorie.html">Kategorie</a>
+                    <ol>
+                        <li><a href="dramat.html">Dramat</a></li>
+                        <li><a href="komedia.html">Komedia</a></li>
+                        <li><a href="kryminal.html">Kryminał</a></li>
+                        <li><a href="dramhist.html">Dramat historyczny</a></li>
+                        <li><a href="fantasy.html">Fantasy</a></li>
+                        <li><a href="horror.html">Horror</a></li>
+                        <li><a href="scifi.html">Sci-Fi</a></li>
+                    </ol>
+                </li>
+                <li><a href="info.html">O blogu</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>  
+    <main>
+        <article>
+            <div class="content">
+                <h1>Proszę, skontaktuj się ze mną poprzez poniższy formularz.</h1>
+                <form action="kontakt2.html">
+                    <label for="fname" >Imię:</label>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="sname">Nazwisko:</label>
+                    <input type="text" id="sname" name="sname"><br>
+                    <label for="ulubionyserial">Ulubiony serial:</label>
+                    <select id="ulubionyserial" name="ulubionyserial">
+                        <option value=bcs>Better Call Saul!</option>
+                        <option value=lucyfer>Lucyfer</option>
+                        <option value=bb>Breaking Bad</option>
+                        <option value=wikingowie>Wikingowie</option>
+                        <option value=sherlock>Sherlock</option>
+                        <option value=st>Stranger Things</option>
+                    </select><br><br>
+                    <label for="textarea">Napisz poniżej, jeśli twojego ulubionego serialu nie ma na stronie.<br> Postaram się go obejrzeć i dodać moją opinię.</label><br>
+                    <textarea name="textarea" id="textarea" rows="10" cols="60">
+                    </textarea><br><br>
+                    Na jakiej platformie najczęściej oglądasz seriale?
+                    <input list="serialowaplatforma">
+                    <datalist id="serialowaplatforma">
+                      <option value="Netlix">
+                      <option value="HBO Go">
+                      <option value="Amazon Prime Video">
+                    </datalist><br>
+                    <br>Płeć:<br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Mężczyzna</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Kobieta</label><br><br>
+                    Zaznacz twoje ulubione sposoby oglądanie seriali:<br>
+                    <input type="checkbox" id="s1" name="s1" value="Samemu">
+                    <label for="s1"> Samemu</label><br>
+                    <input type="checkbox" id="s2" name="s2" value="Binge watching">
+                    <label for="s2">Wiele odcinków na jednym posiedzeniu</label><br>
+                    <input type="checkbox" id="s3" name="s3" value="Z przyjacielem">
+                    <label for="s3"> Z najlepszym przyjacielem</label><br>
+                    <input type="checkbox" id="s4" name="s4" value="Z rodziną">
+                    <label for="s4"> Całą rodziną</label><br><br>
+                    <label for="birthday">Data urodzenia:</label>
+                    <input type="date" id="birthday" name="birthday"><br>
+                    <br>
+                    <input type="submit" value="Wyślij">
+                    <input type="reset" value="Wyczyść formularz">
+                </form>
+
+                <br><br>
+                  <p>Polecam kliknąć obrazki poniżej, które są jednocześnie linkami, do moich ulubionych stron na temat kina.</p>
+                    <div class="links">
+                        <a href="https://www.filmweb.pl/" target="_blank"><div class="link"><img src="img/filmweb.jpg" alt="Filmweb"></div></a>
+                        <a href="https://www.imdb.com" target="_blank"><div class="link"><img src="img/imdb.jpg" alt="IMBd"></div></a>
+                        <div style="clear: both;"></div>
+                    </div><br><br>
+            </div>
+        </article>
+        
+    </main> 
+
+    <footer>
+        Wszelkie prawa zastrzeżone &copy; 2020 Dziękuję za wizytę. <span class="gotop"><a href="#">Wróć na górę strony</a></span>
+    </footer>
+</div>
+</body>
+</html>

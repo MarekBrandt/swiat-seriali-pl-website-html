@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<xs:element name="strona">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="autor" type="autorType">
+				</xs:element>
+				<xs:element name="data" type="xs:date">
+				</xs:element>
+				<xs:element name="seriale" type="serialeType"></xs:element>
+				<xs:element name="linkiOgolne">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="link" maxOccurs="unbounded"></xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="autorType">
+		<xs:sequence>
+			<xs:element name="imie" type="imieType"/>
+			<xs:element name="nazwisko" type="nazwiskoType"/>
+		</xs:sequence>
+		<xs:attribute name="wiek" type ="wiekType"></xs:attribute>
+		<xs:attribute name="plec">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="male"/>
+					<xs:enumeration value="female"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="narodowosc">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="[a-z][a-z]"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:simpleType name="imieType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="nazwiskoType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="3"/>
+			<xs:maxLength value="20"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="wiekType">
+		<xs:restriction base="xs:decimal">
+			<xs:maxInclusive value="120"/>
+			<xs:minInclusive value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="linkType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="source" type="xs:anyURI"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="serialeType">
+		<xs:sequence>
+			<xs:element name="serial" type ="serialType" maxOccurs="unbounded"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="serialType">
+		<xs:sequence>
+			<xs:element name="daneSerialu" type="daneSerialuType"></xs:element>
+		</xs:sequence>
+		<xs:attribute ref="produkcja"/>
+		<xs:attribute ref="sezonow"/>
+		<xs:attribute ref="mojaOcena"/>
+	</xs:complexType>
+	<xs:complexType name="daneSerialuType">
+		<xs:sequence>
+			<xs:element name="kluczowe" type="kluczoweType"/>
+			<xs:element name="poboczne" type="poboczneType"/>	
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="kluczoweType">
+		<xs:group ref="kluczoweSerialu"/>
+	</xs:complexType>
+	<xs:complexType name="poboczneType">
+		<xs:sequence>
+			<xs:element name="tworca" type="xs:string"/>
+			<xs:element name="opis" type="opisType"/>
+			<xs:element name="gatunki" type ="gatunkiType"/>
+			<xs:element name="zdjecie" type="linkType">
+			</xs:element>
+			<xs:element name="linki">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="link" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="opisType" mixed="true">
+		<xs:sequence>
+			<xs:element name="pierwszeZdanie" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="gatunkiType">
+		<xs:sequence>
+			<xs:element name="gatunek" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:group name="kluczoweSerialu">
+		<xs:sequence>
+			<xs:element ref="tytul"/>
+			<xs:element ref="krotkiOpis"/>
+		</xs:sequence>
+	</xs:group>
+	<xs:element name="tytul" type="tytulType"/>
+	<xs:element name="krotkiOpis" type="krotkiOpisType"/>
+	<xs:simpleType name="tytulType">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="30"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="krotkiOpisType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="10"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:attribute name="source" type="xs:anyURI"/>
+	<xs:attribute name="produkcja" type="xs:string"/>
+	<xs:attribute name="sezonow" type="xs:byte"/>
+	<xs:attribute name="mojaOcena">
+		<xs:simpleType>
+			<xs:restriction base="xs:decimal">
+				<xs:maxInclusive value="10"/>
+				<xs:minInclusive value="0"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:element name="link" type="linkType"/>
+</xs:schema>

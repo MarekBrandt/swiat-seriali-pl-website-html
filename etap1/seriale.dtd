@@ -1,0 +1,39 @@
+<!ELEMENT strona (autor, data, seriale, linkiOgolne)>
+<!ELEMENT autor (imie, nazwisko)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ATTLIST autor wiek CDATA "19">
+<!ATTLIST autor plec (male|female) #REQUIRED>
+<!ATTLIST autor narodowosc CDATA "pl">
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT seriale (serial+)>
+<!ELEMENT serial (daneSerialu?)>
+<!ATTLIST serial produkcja CDATA #IMPLIED>
+<!ATTLIST serial sezonow CDATA #IMPLIED>
+<!ATTLIST serial mojaOcena CDATA #IMPLIED>
+<!ELEMENT daneSerialu (kluczowe, poboczne)>
+<!ELEMENT kluczowe (tytul, krotkiOpis)>
+<!ELEMENT tytul (#PCDATA)>
+<!ELEMENT krotkiOpis (#PCDATA)>
+<!ELEMENT poboczne (tworca, opis, gatunki, zdjecie, linki)>
+<!ELEMENT tworca (#PCDATA)>
+<!ELEMENT opis (#PCDATA|pierwszeZdanie)*>
+<!ELEMENT pierwszeZdanie (#PCDATA)>
+<!ELEMENT gatunki (gatunek+)>
+<!ELEMENT gatunek (#PCDATA)>
+<!ELEMENT zdjecie (#PCDATA)>
+<!ATTLIST zdjecie source CDATA #IMPLIED>
+<!ELEMENT linki (link+)>
+<!ELEMENT link (#PCDATA)>
+<!ATTLIST link source CDATA #IMPLIED>
+<!ELEMENT linkiOgolne (link+)>
+<!ATTLIST linkiOgolne source CDATA #IMPLIED>
+<!ENTITY copyRight "Kopiowanie nie dozwolone">
+<!ENTITY doStrony SYSTEM "https://www.w3schools.com/entities.dtd">
+<!ENTITY % inicjalImie "M">
+<!ENTITY % inicjalNazwisko "B">
+
+
+
+
+
